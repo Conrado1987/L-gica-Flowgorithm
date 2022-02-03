@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Conrado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 03:23:49 "/>
+        <attribute name="created" value="Q29ucmFkbztERVNLVE9QLVIyMVZVVjU7MjAyMi0wMS0yNjsiMDI6NTA6NTMgIjsyOTY5"/>
+        <attribute name="edited" value="Q29ucmFkbztERVNLVE9QLVIyMVZVVjU7MjAyMi0wMS0yNjsiMDM6MjM6NDkgIjszOzMwODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nomecliente" type="String" array="False" size=""/>
+            <declare name="cart&#227;o" type="Boolean" array="False" size=""/>
+            <declare name="numerocart&#227;o" type="Integer" array="False" size=""/>
+            <input variable="Nomecliente"/>
+            <input variable="cart&#227;o"/>
+            <if expression="cart&#227;o">
+                <then>
+                    <input variable="numerocart&#227;o"/>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente a loja s&#243; aceita compras atrav&#233;s de cart&#227;o.&quot;" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
